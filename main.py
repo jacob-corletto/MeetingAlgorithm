@@ -1,1 +1,2 @@
-def sort
+def sorter(u):
+  print("will do somthing")
