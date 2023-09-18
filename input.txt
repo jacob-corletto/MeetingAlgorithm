@@ -1,4 +1,6 @@
-person1_Schedule =[ [’12:00’, ’13:00’], [’16:00’, ’18:00’]]
+git remote add origin https://github.com/jacob-corletto/MeetingAlgorithm.git
+git branch -M main
+git push -u origin mainperson1_Schedule =[ [’12:00’, ’13:00’], [’16:00’, ’18:00’]]
 person1_DailyAct = [‘9:00’, ’19:00’]
 
 
