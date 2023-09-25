@@ -1,5 +1,5 @@
 import datetime
-import json
+#import json
 
 file_path = 'input.txt'
 file_content = []
@@ -8,6 +8,10 @@ file_content = []
 with open(file_path, 'r') as file:
     # Read the entire file content into a string
     file_content = file.readlines()
+
+for i in range(len(file_content)):
+  print(i, file_content[i])  
+    
 
 def sorter(u):
   print("will do somthing")
