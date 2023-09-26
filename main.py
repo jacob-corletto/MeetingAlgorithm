@@ -1,5 +1,6 @@
 import datetime
 #import json
+#import ast
 
 file_path = 'input.txt'
 file_content = []
@@ -13,6 +14,7 @@ for i in range(len(file_content)):
   print(i, file_content[i])  
 
 
+
 #convert time to minutes for easier comparison 
 def convertToMins(time):
     hours, minutes = list(map(int, time.split(':')))
@@ -21,3 +23,4 @@ def convertToMins(time):
 
 def main():
     print("Hello World!")
+    
