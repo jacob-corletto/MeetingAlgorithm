@@ -20,6 +20,7 @@ with open(file_path, 'r') as file:
         exec(f"var{x} = line")
 
 personOne = ast.literal_eval(str(var1))
+print(personOne)
 personOne_Activity = ast.literal_eval(str(var2))
 personeTwo = ast.literal_eval(str(var3))
 personeTwo_Activity = ast.literal_eval(str(var4))
