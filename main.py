@@ -1,19 +1,34 @@
 import datetime
 #import json
-#import ast
+import ast
 
 file_path = 'input.txt'
 file_content = []
 
+var1 = []
+var2 = []
+var3 = []
+var4 = []
+var5 = []
+
 # Open the file in read mode ('r')
 with open(file_path, 'r') as file:
-    # Read the entire file content into a string
-    file_content = file.readlines()
+    # Read all lines in the file one by one
+    x = 0
+    for line in file:
+        x+=1
+        exec(f"var{x} = line")
 
+personOne = ast.literal_eval(str(var1))
+personOne_Activity = ast.literal_eval(str(var2))
+personeTwo = ast.literal_eval(str(var3))
+personeTwo_Activity = ast.literal_eval(str(var4))
+duration = ast.literal_eval(str(var5))
+
+
+# Print the contents of the file to the console
 for i in range(len(file_content)):
   print(i, file_content[i])  
-
-
 
 #convert time to minutes for easier comparison 
 def convertToMins(time):
@@ -23,4 +38,3 @@ def convertToMins(time):
 
 def main():
     print("Hello World!")
-    
