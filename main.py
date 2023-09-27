@@ -35,6 +35,15 @@ def convertToMins(time):
     hours, minutes = list(map(int, time.split(':')))
     return hours * 60 + minutes
 
+def convertlistToMins(lst):
+    return [[convertToMins(j) for j in i] for i in lst]
+
+def converminstohours(list):
+    hours = minutes // 60
+    minutes = minutes % 60
+    tostr = '0' + str(hours) if minutes < 10 else str(hours)
+    return tostr + ':' + str(minutes)
+
 
 def main():
     print("Hello World!")
