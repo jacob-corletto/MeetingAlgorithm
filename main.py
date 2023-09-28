@@ -44,21 +44,12 @@ def converminstohours(list):
     tostr = '0' + str(hours) if minutes < 10 else str(hours)
     return tostr + ':' + str(minutes)
 
-# Algo part
-datestring = "5:00"
-parsed_time = datetime.strptime(datestring, "%H:%M")
-total_minutes = parsed_time.hour * 60 + parsed_time.minute
-print(total_minutes)
+#simple tomins written with datetime library (idk if we can use it but easier than the ladder)
+def toMins(time):
+  parsed_time = datetime.strptime(time,"%H:%M")
+  return parsed_time.hour*60 + parsed_time.minute
+  
 
-datestring2 = "9:00"
-parsed_time2 = datetime.strptime(datestring2, "%H:%M")
-total_minutes2 = parsed_time2.hour * 60 + parsed_time2.minute
-print(total_minutes2)
-
-datestring = start 
-datestring2 = end 
-
-while start != end:
   
 
 
