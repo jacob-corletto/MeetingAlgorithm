@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 #import json
 import ast
 
@@ -20,7 +20,6 @@ with open(file_path, 'r') as file:
         exec(f"var{x} = line")
 
 personOne = ast.literal_eval(str(var1))
-print(personOne)
 personOne_Activity = ast.literal_eval(str(var2))
 personeTwo = ast.literal_eval(str(var3))
 personeTwo_Activity = ast.literal_eval(str(var4))
@@ -28,8 +27,8 @@ duration = ast.literal_eval(str(var5))
 
 
 # Print the contents of the file to the console
-for i in range(len(file_content)):
-  print(i, file_content[i])  
+# for i in range(len(file_content)):
+#   print(i, file_content[i])  
 
 #convert time to minutes for easier comparison 
 def convertToMins(time):
@@ -45,6 +44,22 @@ def converminstohours(list):
     tostr = '0' + str(hours) if minutes < 10 else str(hours)
     return tostr + ':' + str(minutes)
 
+# Algo part
+datestring = "5:00"
+parsed_time = datetime.strptime(datestring, "%H:%M")
+total_minutes = parsed_time.hour * 60 + parsed_time.minute
+print(total_minutes)
 
-def main():
-    print("Hello World!")
+datestring2 = "9:00"
+parsed_time2 = datetime.strptime(datestring2, "%H:%M")
+total_minutes2 = parsed_time2.hour * 60 + parsed_time2.minute
+print(total_minutes2)
+
+datestring = start 
+datestring2 = end 
+
+while start != end:
+  
+
+
+

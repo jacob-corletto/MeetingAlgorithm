@@ -19,4 +19,4 @@ person1_DailyAct = [‘9:00’, ’19:00’]
 person2_Schedule = [[ ‘9:00’, ’10:30’], [’12:20’, ’14:30’], [’14:00’, ’15:00’], [’16:00’, ’17:00’ ]]
 person2_DailyAct = [‘9:00’, ’18: 30’]
 
-duration_of_meeting =30
+duration_of_meeting = 30
