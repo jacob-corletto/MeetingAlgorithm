@@ -3,7 +3,6 @@ from datetime import datetime
 import ast
 
 file_path = 'input.txt'
-file_content = []
 
 var1 = []
 var2 = []
@@ -21,8 +20,8 @@ with open(file_path, 'r') as file:
 
 personOne = ast.literal_eval(str(var1))
 personOne_Activity = ast.literal_eval(str(var2))
-personeTwo = ast.literal_eval(str(var3))
-personeTwo_Activity = ast.literal_eval(str(var4))
+personTwo = ast.literal_eval(str(var3))
+personTwo_Activity = ast.literal_eval(str(var4))
 duration = ast.literal_eval(str(var5))
 
 
@@ -49,8 +48,23 @@ def toMins(time):
   parsed_time = datetime.strptime(time,"%H:%M")
   return parsed_time.hour*60 + parsed_time.minute
   
+#Algo part
+Answer = []
+
+#find starting point
+if toMins(personOne_Activity[0]) <= toMins(personTwo_Activity[0]):
+  curr = toMins(personOne_Activity[0])
+
+else:
+  curr = toMins(personTwo_Activity[0])
+
+#find ending point
+print(curr)
 
   
+# for i in range(len(personOne)):
+#   for j in range(len(personOne[i])):
+#     personOneTime += toMins(personOne[i][j])
 
 
 
